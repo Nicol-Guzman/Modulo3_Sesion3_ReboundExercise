@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Modulo 3 - Sesión 5</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <h1 id="titulo">INSCRÍBETE</h1>
+    
+    <section class="formulario">
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Jane" required>
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="jane.doe@gmail.com" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="trabajo">Trabajo</label>
+                    <input type="text" name="trabajo" id="trabajo" placeholder="Community Manager" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="+56900112233" required>
+                </div>
+            </div>
+            <div class="form-row form-row-full">
+                <label for="acercaDe">Sobre ti</label>
+                <input type="text" name="acercaDe" id="acercaDe" placeholder="Cuéntanos algo sobre ti..." required>
+            </div>
+            <div>
+                <button type="submit" id="enviar" onclick="registrarMostrar()">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <div class="card">
+            <div class="card-profile">
+                <img src="https://avatar.iran.liara.run/public/66" alt="Profile Image">
+                <div class="profile-text">
+                    <p class="name" id="name"></p>
+                    <p class="work" id="work"></p>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="info-header">
+                    <p>Información</p>
+                </div>
+                <div class="form-row2">
+                    <div class="info-item">
+                        <p>Email</p>
+                        <p class="email" id="email"></p>
+                    </div>
+                    <div class="info-item">
+                        <p>Phone</p>
+                        <p class="phone" id="phone"></p>
+                    </div>
+                </div>
+                <div class="form-row2 form-row-full2">
+                    <p>Sobre Mi</p>
+                    <p class="aboutMe" id="aboutMe"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
